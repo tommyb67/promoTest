@@ -7,11 +7,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response FILL_IN
   end
 
-
   test "should get home" do
     get static_pages_home_url
     assert_response :success
-    assert_select "title", "Home | Widgets Company"
+    assert_select "title", "Widgets Company"
   end
 
   test "should get about" do
